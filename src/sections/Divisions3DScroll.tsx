@@ -61,7 +61,7 @@ export default function Divisions3DScroll() {
 
     let animationId: number;
     let scrollPos = 0;
-    const speed = 0.5;
+    const speed = 0.25;
 
     const animate = () => {
       if (!scrollEl) return;
@@ -130,9 +130,6 @@ export default function Divisions3DScroll() {
                 imageUrl={division.imageUrl}
                 actionText={division.actionText}
                 href={division.href}
-                onActionClick={() => {
-                  window.location.href = division.href;
-                }}
               />
             </div>
           </motion.div>
@@ -151,9 +148,6 @@ export default function Divisions3DScroll() {
                 imageUrl={division.imageUrl}
                 actionText={division.actionText}
                 href={division.href}
-                onActionClick={() => {
-                  window.location.href = division.href;
-                }}
               />
             </div>
           </motion.div>
