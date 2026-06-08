@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import DivisionPage from "@/components/DivisionPage";
+
+export const metadata: Metadata = {
+  title: "Health & Safety Products",
+  description:
+    "PPE, fire safety, gas detection, and site safety infrastructure for Oman's largest construction and oil & gas projects. 10,000+ workers protected.",
+  alternates: {
+    canonical: "/safety/",
+  },
+  openGraph: {
+    title: "Health & Safety Products | Al Khonji",
+    description:
+      "PPE, fire safety, gas detection, and site safety infrastructure for Oman's largest construction and oil & gas projects.",
+    url: "/safety/",
+  },
+};
 
 const services = [
   { title: "Personal Protective Equipment", description: "Hard hats, safety boots, high-visibility clothing, and respiratory protection from leading global brands." },

@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import DivisionPage from "@/components/DivisionPage";
+
+export const metadata: Metadata = {
+  title: "Oil & Auto Products",
+  description:
+    "Industrial lubricants, automotive fluids, and oilfield chemicals. API and ACEA certified products for Oman's energy and transportation sectors.",
+  alternates: {
+    canonical: "/oil-auto/",
+  },
+  openGraph: {
+    title: "Oil & Auto Products | Al Khonji",
+    description:
+      "Industrial lubricants, automotive fluids, and oilfield chemicals for Oman's energy sector.",
+    url: "/oil-auto/",
+  },
+};
 
 const services = [
   { title: "Industrial Lubricants", description: "Hydraulic, gear, compressor, and turbine oils formulated for extreme heat and heavy-duty Omani operations." },

@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import DivisionPage from "@/components/DivisionPage";
+
+export const metadata: Metadata = {
+  title: "Mohammed & Ahmed Al Khonji — Group Holding",
+  description:
+    "Strategic governance and shared services for the Al Khonji Group's five operating divisions. Corporate headquarters in Muscat, Oman.",
+  alternates: {
+    canonical: "/group/",
+  },
+  openGraph: {
+    title: "Mohammed & Ahmed Al Khonji — Group Holding | Al Khonji",
+    description:
+      "Strategic governance and shared services for the Al Khonji Group's five operating divisions.",
+    url: "/group/",
+  },
+};
 
 const services = [
   { title: "Strategic Governance", description: "Board-level oversight, corporate strategy, and long-term planning guiding all five operating divisions." },

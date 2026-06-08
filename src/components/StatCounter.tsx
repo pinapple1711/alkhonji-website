@@ -18,10 +18,17 @@ export default function StatCounter({
 }: StatCounterProps) {
   const ref = useRef<HTMLDivElement>(null);
   const isInView = useInView(ref, { once: true, margin: "-50px" });
-  const [count, setCount] = useState(0);
+  const [count, setCount] = useState(value);
+  const hasBeenOutOfView = useRef(false);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView) {
+      hasBeenOutOfView.current = true;
+      return;
+    }
+    // Only animate if the element was previously out of view (scroll-in).
+    // If already in view on initial load, keep the static value to avoid a flash.
+    if (!hasBeenOutOfView.current) return;
 
     let startTime: number;
     let animationFrame: number;

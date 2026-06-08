@@ -21,7 +21,11 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Al Khonji — Building Oman Since 1934",
+  metadataBase: new URL("https://alkhonji.com"),
+  title: {
+    default: "Al Khonji — Building Oman Since 1934",
+    template: "%s | Al Khonji",
+  },
   description:
     "Al Khonji is one of Oman's most established industrial groups. Engineering, construction, safety, and supply solutions for over 90 years.",
   openGraph: {
@@ -29,6 +33,31 @@ export const metadata: Metadata = {
     description:
       "Engineering Products & Services, Health & Safety, Electro-Mechanical & Construction, Oil & Auto Products.",
     type: "website",
+    url: "/",
+    images: [
+      {
+        url: "/images/alkhonji-hero.png.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Al Khonji industrial facilities in Oman",
+      },
+    ],
+    locale: "en_OM",
+    siteName: "Al Khonji",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Al Khonji — Building Oman Since 1934",
+    description:
+      "Engineering Products & Services, Health & Safety, Electro-Mechanical & Construction, Oil & Auto Products.",
+    images: ["/images/alkhonji-hero.png.jpeg"],
+  },
+  alternates: {
+    canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
 };
 

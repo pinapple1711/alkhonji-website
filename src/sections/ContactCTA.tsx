@@ -169,20 +169,13 @@ export default function ContactCTA() {
               className="flex flex-wrap items-center gap-3 pt-2"
             >
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/company/alkhonji"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm text-sm text-[#334155] hover:text-[#C2410C] hover:shadow-md transition-all"
               >
                 <ExternalLink size={14} />
                 LinkedIn
-              </a>
-              <a
-                href="https://alkhonji.com"
-                className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white shadow-sm text-sm text-[#334155] hover:text-[#C2410C] hover:shadow-md transition-all"
-              >
-                <ExternalLink size={14} />
-                Official Website
               </a>
             </motion.div>
           </div>

@@ -132,7 +132,7 @@ export default function Footer() {
 
           <div className="flex items-center gap-6">
             <a
-              href="#"
+              href="/privacy/"
               className="text-xs text-[#78716C] hover:text-white transition-colors"
             >
               Privacy Policy

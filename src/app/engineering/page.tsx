@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import DivisionPage from "@/components/DivisionPage";
+
+export const metadata: Metadata = {
+  title: "Engineering Products & Services",
+  description:
+    "Precision valves, gauges, piping, and pumps for oil & gas, water, and power sectors. Serving Oman since 1980. 2,500+ products, 150+ industrial clients.",
+  alternates: {
+    canonical: "/engineering/",
+  },
+  openGraph: {
+    title: "Engineering Products & Services | Al Khonji",
+    description:
+      "Precision valves, gauges, piping, and pumps for oil & gas, water, and power sectors. Serving Oman since 1980.",
+    url: "/engineering/",
+  },
+};
 
 const services = [
   { title: "Industrial Valves & Fittings", description: "Gate, globe, ball, and butterfly valves for high-pressure applications across oil, gas, and water infrastructure." },

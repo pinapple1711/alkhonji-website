@@ -1,4 +1,20 @@
+import type { Metadata } from "next";
 import DivisionPage from "@/components/DivisionPage";
+
+export const metadata: Metadata = {
+  title: "Electro-Mechanical & Construction",
+  description:
+    "MEP contracting, HVAC, and turnkey construction across Oman. 200+ projects completed, 5M+ sqm built, 100% on-time delivery.",
+  alternates: {
+    canonical: "/construction/",
+  },
+  openGraph: {
+    title: "Electro-Mechanical & Construction | Al Khonji",
+    description:
+      "MEP contracting, HVAC, and turnkey construction across Oman. 200+ projects completed with 100% on-time delivery.",
+    url: "/construction/",
+  },
+};
 
 const services = [
   { title: "MEP Contracting", description: "Mechanical, electrical, and plumbing systems design, installation, and commissioning for commercial and industrial buildings." },
