@@ -3,7 +3,7 @@ import ScrollProgress from "@/components/ScrollProgress";
 import Footer from "@/components/Footer";
 import HeroSection from "@/sections/HeroSection";
 import StatsBar from "@/sections/StatsBar";
-import DivisionsGrid from "@/sections/DivisionsGrid";
+import Divisions3DScroll from "@/sections/Divisions3DScroll";
 import LegacySection from "@/sections/LegacySection";
 import PartnersStrip from "@/sections/PartnersStrip";
 import CareersCTA from "@/sections/CareersCTA";
@@ -17,7 +17,7 @@ export default function Home() {
       <main className="flex-1">
         <HeroSection />
         <StatsBar />
-        <DivisionsGrid />
+        <Divisions3DScroll />
         <LegacySection />
         <PartnersStrip />
         <CareersCTA />
